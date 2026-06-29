@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+
+        <h1>
+            <i class="fa-solid fa-list-check"></i>
+            Task Manager
+        </h1>
+
+        <!-- Theme Color Picker -->
+        <input type="color" id="themeColor" title="Choose Theme Color">
+
+    </header>
+
+     <!-- Add Task  -->
+    <div class="input-box">
+
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a new task...">
+
+        <button id="addBtn">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+
+    </div>
+
+    <!-- Search -->
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search task...">
+
+   
+    <div class="stats">
+
+        <div class="card">
+            <h3 id="total">0</h3>
+            <p>Total</p>
+        </div>
+
+        <div class="card">
+            <h3 id="completed">0</h3>
+            <p>Completed</p>
+        </div>
+
+        <div class="card">
+            <h3 id="pending">0</h3>
+            <p>Pending</p>
+        </div>
+
+    </div>
+
+    <!-- Task List -->
+    <ul id="taskList">
+        <!-- Tasks will appear here -->
+    </ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
